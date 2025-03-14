@@ -6,10 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prisma": "prisma"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
+    "@prisma/client": "^6.5.0",
     "@radix-ui/react-accordion": "^1.2.2",
     "@radix-ui/react-alert-dialog": "^1.1.4",
     "@radix-ui/react-aspect-ratio": "^1.1.1",
@@ -55,6 +57,7 @@
     "react-resizable-panels": "^2.1.7",
     "recharts": "2.15.0",
     "sonner": "^1.7.1",
+    "stripe": "^17.7.0",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^0.9.6",
@@ -66,8 +69,14 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "postcss": "^8",
+    "prisma": "^6.5.0",
     "tailwindcss": "^3.4.17",
     "typescript": "^5"
   },
-  "packageManager": "pnpm@10.6.3+sha512.bb45e34d50a9a76e858a95837301bfb6bd6d35aea2c5d52094fa497a467c43f5c440103ce2511e9e0a2f89c3d6071baac3358fc68ac6fb75e2ceb3d2736065e6"
+  "packageManager": "pnpm@10.6.3+sha512.bb45e34d50a9a76e858a95837301bfb6bd6d35aea2c5d52094fa497a467c43f5c440103ce2511e9e0a2f89c3d6071baac3358fc68ac6fb75e2ceb3d2736065e6",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@prisma/client"
+    ]
+  }
 }
