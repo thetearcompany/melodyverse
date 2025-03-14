@@ -87,6 +87,19 @@ export function MainNav() {
             Concerts
           </Link>
         </Button>
+        <Button
+          asChild
+          variant="ghost"
+          size="sm"
+          className={cn(
+            "text-sm font-medium transition-colors hover:text-primary",
+            pathname === "/social-network" ? "text-primary" : "text-muted-foreground",
+          )}
+        >
+          <Link href="/social-network">
+            Social Network
+          </Link>
+        </Button>
       </nav>
     </div>
   )
