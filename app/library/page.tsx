@@ -77,10 +77,8 @@ export default function LibraryPage() {
         </div>
       </header>
       <main className="flex-1">
-        <div className="container grid flex-1 gap-12 md:grid-cols-[200px_1fr] lg:grid-cols-[250px_1fr]">
-          <aside className="hidden w-[250px] flex-col md:flex">
-            <MusicLibrary />
-          </aside>
+        <div className="container">
+          <MusicLibrary />
           <div className="flex flex-col gap-4 py-6">
             <h1 className="text-3xl font-bold tracking-tight">Your Library</h1>
 

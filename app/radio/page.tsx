@@ -147,8 +147,7 @@ export default function RadioPage() {
                     <CarouselContent>
                       {soulPortraits.map((soul) => (
                         <CarouselItem key={soul.id} className="md:basis-1/2 lg:basis-1/3">
-                          <div className="p-4">
-                            <div className="rounded-lg overflow-hidden bg-gradient-to-br from-[#006400]/20 to-[#FFD700]/10 p-4">
+                            <div className="h-full rounded-lg overflow-hidden bg-gradient-to-br from-[#006400]/20 to-[#FFD700]/10 p-4">
                               <div className="aspect-square rounded-lg overflow-hidden mb-4">
                                 <img src={soul.image} alt={soul.name} className="w-full h-full object-cover" />
                               </div>
@@ -157,7 +156,6 @@ export default function RadioPage() {
                               <p className="text-sm mb-3">{soul.description}</p>
                               <p className="text-sm italic">&quot;{soul.favoriteVerse}&quot;</p>
                             </div>
-                          </div>
                         </CarouselItem>
                       ))}
                     </CarouselContent>
